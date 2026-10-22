@@ -19,16 +19,17 @@
 
   <!-- Menu Navigasi -->
 <p>
-    <b>Menu:</b> 
-    <a href="/dashboard">Dashboard</a> | 
-    <a href="/lapangan">Data Lapangan</a> | 
-    <a href="/booking">Booking</a> | 
-    <a href="/pembayaran">Pembayaran</a> | 
-    <a href="/riwayat">Riwayat Booking</a> | 
+    <b>Menu Navigasi:</b> <br>
+    
+    <a href="/lapangan">Data Lapangan</a> <br>
+    <a href="/booking">Booking</a> <br>
+    <a href="/pembayaran">Pembayaran</a> <br>
+    <a href="/riwayat">Riwayat Booking</a> <br> 
     
     <form action="/logout" method="POST" style="display: inline;">
         @csrf
         <button type="submit">Logout</button>
+      
     </form>
 </p>
 

@@ -9,13 +9,12 @@ use App\Models\User;
 
 class AuthController extends Controller
 {
-   // Halaman Form Login
     public function index()
     {
         return view('login');
     }
 
-    // Proses Login
+
     public function login(Request $request)
     {
         $credentials = $request->validate([
@@ -91,9 +90,8 @@ public function prosesPembayaran($id)
 
 public function riwayat()
 {
-    $bookings = \DB::table('pembayarans')->get();
-    
-    return view('riwayat', compact('bookings'));
+    $riwayats = \App\Models\Pembayaran::all(); 
+    return view('riwayat', compact('riwayats'));
 }
     public function logout(Request $request)
     {
